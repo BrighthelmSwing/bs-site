@@ -262,3 +262,8 @@ a:hover {
   color: #fff;
   padding: 10px 20px;
 }
+
+.last-updated {
+  font-size: 11px;
+  text-align: center;
+}
