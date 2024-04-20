@@ -1,7 +1,14 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: #0e111d;
   color: #b3b3b3;
   font-family: "Open Sans", sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -14,13 +21,11 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #b3b3b3;
+  color: #ad57e8;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #ad57e8;
+  color: #ba68c8;
 }
 
 .swing-container {
@@ -126,7 +131,7 @@ a:hover {
 }
 
 .swing-location__map {
-  padding: 0;
+  padding: 3rem 2rem;
 }
 
 .swing-location__map iframe {
@@ -182,7 +187,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .swing-collegiate__column {
-    padding: 0rem;
+    padding: 1rem;
   }
 }
 
@@ -261,9 +266,98 @@ a:hover {
   background-color: #963dd3;
   color: #fff;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 .last-updated {
   font-size: 11px;
   text-align: center;
+}
+
+.swing-contact a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.swing-contact a:hover {
+  color: #ffffff;
+}
+
+/* Landing page */
+.swing-landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  position: relative;
+}
+
+.swing-landing a {
+  text-decoration: underline;
+}
+
+.swing-landing__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.swing-landing__section h2 {
+  z-index: 1;
+}
+
+.swing-landing__section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1c1f2c;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swing-landing__section:hover::before {
+  opacity: 0.3;
+}
+
+.swing-landing__section:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.swing-landing__section--brighton {
+  background-image: url("../img/brighton.jpg");
+}
+
+.swing-landing__section--west-sussex {
+  background-image: url("../img/west-sussex.jpg");
+}
+
+.swing-landing__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.swing-landing__logo img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #1c1f2c;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .swing-landing {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
