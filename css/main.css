@@ -21,13 +21,11 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #b3b3b3;
+  color: #ad57e8;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #ad57e8;
+  color: #ba68c8;
 }
 
 .swing-container {
@@ -275,6 +273,15 @@ a:hover {
 .last-updated {
   font-size: 11px;
   text-align: center;
+}
+
+.swing-contact a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.swing-contact a:hover {
+  color: #ffffff;
 }
 
 /* Landing page */
