@@ -136,6 +136,7 @@ a:hover {
 
 .swing-location__map iframe {
   min-height: 400px;
+  width: 100%;
   border: 0;
 }
 
@@ -360,4 +361,17 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+}
+
+
+.bg-dark {
+  background-color: #0e111d;
+}
+
+.bg-light {
+  background-color: #1c1f2c;
+}
+
+.swing-location .swing-location__information {
+  padding-bottom: 0;
 }
